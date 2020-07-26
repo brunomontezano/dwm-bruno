@@ -1,5 +1,7 @@
 # My dwm (dynamic window manager) build
 
+![Screenshot2020-07-2614:54:41](https://user-images.githubusercontent.com/65104127/88486233-ab835400-cf52-11ea-8928-be752c650922.png)
+
 Dwm is a fast, small, and dynamic window manager for X. Dwm is created by the [suckless.org](https://suckless.org) team.  This is my build of dwm.  I used some patches in this build to make dwm more like me. I based my personal build on DistroTube's dwm build.  The patches I added to this build include:
 + alpha (for transparency)
 + attachaside (new clients appear in the stack rather than as the master)
@@ -59,13 +61,13 @@ The MODKEY is set to the Super key (also known as the Windows key).
 
 If you do not use a login manager (such as LightDM) then you can add the following line to your .xinitrc to start dwm using startx:
     
-    ```
+    
     exec dwm
-    ```
+    
 	
 If you use a login manager (like LightDM), make sure that you have a file called dwm.desktop in your /usr/share/xsessions/ directory.  It should look something like this:
 
-    ```
+    
 	[Desktop Entry]
 	Encoding=UTF-8
 	Name=Dwm
@@ -73,7 +75,7 @@ If you use a login manager (like LightDM), make sure that you have a file called
 	Exec=dwm
 	Icon=dwm
 	Type=XSession
-    ```
+    
 
 # Using my dwm scripts
 

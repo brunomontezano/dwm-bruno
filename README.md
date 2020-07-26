@@ -2,7 +2,7 @@
 
 ![Screenshot2020-07-2614:54:41](https://user-images.githubusercontent.com/65104127/88486233-ab835400-cf52-11ea-8928-be752c650922.png)
 
-Dwm is a fast, small, and dynamic window manager for X. Dwm is created by the [suckless.org](https://suckless.org) team.  This is my build of dwm.  I used some patches in this build to make dwm more like me. I based my personal build on DistroTube's dwm build.  The patches I added to this build include:
+Dwm is a fast, small, and dynamic window manager for X. Dwm is created by the [suckless](https://suckless.org) team.  This is my build of dwm.  I used some patches in this build to make dwm more like me. I based my personal build on DistroTube's dwm build.  The patches I added to this build include:
 + alpha (for transparency)
 + attachaside (new clients appear in the stack rather than as the master)
 + cyclelayouts (cycles through the available layouts)

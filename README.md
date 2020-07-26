@@ -10,6 +10,7 @@ Dwm is a fast, small, and dynamic window manager for X. Dwm is created by the [s
 + restartsig (allows dwm to be restarted with a keybinding)
 + rotatestack (moves a window through the stack, in either direction)
 + statuspadding (horizontal and vertical padding in the status bar are now configurable options)
++ swallow (terminal gets swallowed by application)
 + uselessgap (adding gaps when more than one window)
 
 # Dependencies

@@ -64,9 +64,6 @@ static const Rule rules[] = {
 };
 
 #include <X11/XF86keysym.h>
-static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
-static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
-static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
 /* layout(s) */
 static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
@@ -156,9 +153,9 @@ static Key keys[] = {
     { MODKEY|ShiftMask,       XK_r,    quit,           {1} }, 
 
     /* Change the volume */
-    { 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
-	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
-	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+    { 0,                       XF86XK_AudioLowerVolume, spawn,  SHCMD("pactl set-sink-volume 0 -5%; pkill -RTMIN+10 dwmblocks")},
+	{ 0,                       XF86XK_AudioMute,        spawn,  SHCMD("pactl set-sink-mute 0 toggle; pkill -RTMIN+10 dwmblocks")},
+	{ 0,                       XF86XK_AudioRaiseVolume, spawn,  SHCMD("pactl set-sink-volume 0 +5%; pkill -RTMIN+10 dwmblocks")},
 };
 
 /* button definitions */

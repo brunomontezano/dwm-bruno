@@ -117,7 +117,7 @@ static Key keys[] = {
 	{ MODKEY|ControlMask,   XK_Return, zoom,           {0} },
 	{ MODKEY,               XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,     XK_q,      killclient,     {0} },
-    { MODKEY,               XK_z,      spawn,          SHCMD("~/.dwm/screenshot.sh") },
+    { MODKEY,               XK_z,      spawn,          SHCMD("~/.config/dwm/screenshot.sh") },
 
     /* Layout manipulation */
 	{ MODKEY,               XK_Tab,    cyclelayout,    {.i = -1 } },

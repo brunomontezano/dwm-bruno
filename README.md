@@ -22,8 +22,8 @@ Dwm is a fast, small, and dynamic window manager for X. Dwm is created by the [s
 + tabbed (There are bindings for it)
 
 Also, you will need to add the following from the AUR (Arch User Repository):
-+ nerd-fonts-complete (optional)
-+ https://aur.archlinux.org/packages/libxft-bgra/ (needed for colored fonts and emojis)
++ nerd-fonts-mononoki (optional)
++ [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) or [libxft-bgra-git](https://aur.archlinux.org/packages/libxft-bgra-git) (needed for colored fonts and emojis)
 
 Also, if you are building this on an Ubuntu-based system, you need to install libx11-dev and xorg-dev.
 
@@ -44,7 +44,7 @@ The MODKEY is set to the Super key (also known as the Windows key).
 | Keybinding                | Action                                                                   |
 | :---                      | :---                                                                     |
 | `MODKEY + RETURN`         | opens terminal (st is the terminal but can be easily changed)            |
-| `MODKEY + SHIFT + RETURN` | opens run launcher (dmenu is the run launcher but can be easily changed) |
+| `MODKEY + d`              | opens run launcher (dmenu is the run launcher but can be easily changed) |
 | `MODKEY + SHIFT + q`      | closes window with focus                                                 |
 | `MODKEY + SHIFT + r`      | restarts dwm                                                             |
 | `MODKEY + SHIFT + e`      | exit dwm                                                                 |
@@ -80,7 +80,7 @@ If you use a login manager (like LightDM), make sure that you have a file called
 
 # Using my dwm scripts
 
-dwm-bruno has been patched in such a way that it looks for an autostart file at: $HOME/.dwm/autostart.sh
+dwm-bruno has been patched in such a way that it looks for an autostart file at: $HOME/.config/dwm/autostart.sh
 
 You will need to create this file and the directory that it is located.  An example autostart.sh is included below:
     ```

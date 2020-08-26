@@ -14,12 +14,12 @@ Dwm is a fast, small, and dynamic window manager for X. Dwm is created by the [s
 + uselessgap (adding gaps when more than one window)
 
 # Dependencies
-+ libxft (I recommend libxft-bgra actually)
++ libxft (I actually recommend libxft-bgra)
 + ttf-hack (Font used on the build)
 + ttf-joypixels (Make emojis on dwmblocks possible)
-+ st (The bindings summon st terminal emulator)
-+ dmenu (Same as above)
-+ tabbed (There are bindings for it)
++ [st](https://github.com/brunomontezano/st-bruno) (The bindings summon st terminal emulator)
++ [dmenu](https://github.com/brunomontezano/dmenu-bruno) (Same as above)
++ [tabbed](https://github.com/brunomontezano/tabbed-bruno) (There are bindings for it)
 
 Also, you will need to add the following from the AUR (Arch User Repository):
 + nerd-fonts-mononoki (optional)

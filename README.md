@@ -1,6 +1,6 @@
 # My dwm (dynamic window manager) build
 
-![Screenshot2020-07-2614:54:41](https://user-images.githubusercontent.com/65104127/88486233-ab835400-cf52-11ea-8928-be752c650922.png)
+![Screenshot2020-08-2501:40:44](https://user-images.githubusercontent.com/65104127/91240586-cba45f80-e718-11ea-820e-2544dec41d60.png)
 
 Dwm is a fast, small, and dynamic window manager for X. Dwm is created by the [suckless](https://suckless.org) team.  This is my build of dwm.  I used some patches in this build to make dwm more like me. I based my personal build on DistroTube's dwm build.  The patches I added to this build include:
 + alpha (for transparency)

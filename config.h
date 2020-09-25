@@ -99,6 +99,7 @@ static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
 /* static const char *termcmd[]     = { "st", "-e fish", NULL }; */
 static const char *termcmd[]     = { "st", NULL };
 static const char *tabtermcmd[]  = { "tabbed", "-r 2", "st", "-w", "''", NULL };
+static const char *slockcmd[]    = { "slock", NULL };
 
 static Key keys[] = {
 	/* modifier             key        function        argument */
@@ -151,6 +152,7 @@ static Key keys[] = {
 	TAGKEYS(                  XK_9,          8)
 	{ MODKEY|ShiftMask,       XK_e,	   quit,		   {0} },
     { MODKEY|ShiftMask,       XK_r,    quit,           {1} }, 
+    { MODKEY|ShiftMask,       XK_x,    spawn,          {.v = slockcmd } },
 
     /* Change the volume */
     { 0,                       XF86XK_AudioLowerVolume, spawn,  SHCMD("pactl set-sink-volume 0 -5%; pkill -RTMIN+10 dwmblocks")},

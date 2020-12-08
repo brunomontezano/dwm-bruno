@@ -27,7 +27,7 @@ static const char *fonts[]            = {"Fantasque Sans Mono:size=9:antialias=t
 										};
 static const char col_gray1[]         = "#282a36";
 static const char col_gray2[]         = "#282a36"; /* border color unfocused windows */
-static const char col_gray3[]         = "#ddffa7";
+static const char col_gray3[]         = "#ffe585";
 static const char col_gray4[]         = "#ffffff";
 static const char col_cyan[]          = "#434758"; /* border color focused windows and tags */
 

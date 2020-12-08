@@ -25,11 +25,11 @@ static const char *fonts[]            = {"Fantasque Sans Mono:size=9:antialias=t
                                          "Hack:size=8:antialias=true:autohint=true",
                                          "JoyPixels:size=10:antialias=true:autohint=true"
 										};
-static const char col_gray1[]         = "#292d3e";
-static const char col_gray2[]         = "#292d3e"; /* border color unfocused windows */
-static const char col_gray3[]         = "#96b5b4";
-static const char col_gray4[]         = "#d7d7d7";
-static const char col_cyan[]          = "#595959"; /* border color focused windows and tags */
+static const char col_gray1[]         = "#282a36";
+static const char col_gray2[]         = "#282a36"; /* border color unfocused windows */
+static const char col_gray3[]         = "#ddffa7";
+static const char col_gray4[]         = "#ffffff";
+static const char col_cyan[]          = "#434758"; /* border color focused windows and tags */
 
 /* Bar opacity 
  * 0xff is no transparency.
@@ -41,7 +41,7 @@ static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]        = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray4, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_gray3  },
 };
 static const unsigned int alphas[][3] = {
 	/*               fg      bg        border     */

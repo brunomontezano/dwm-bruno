@@ -1441,8 +1441,10 @@ resizeclient(Client *c, int x, int y, int w, int h)
 	if (c->isfloating || selmon->lt[selmon->sellt]->arrange == NULL) {
 		gapincr = gapoffset = 0;
 	} else {
-		/* Remove border and gap if layout is monocle or only one client */
-		if (selmon->lt[selmon->sellt]->arrange == monocle || n == 1) {
+		/* Remove border and gap if layout is monocle or only one client 
+         * If remove border if only one client too, change if statement for
+         * if (selmon->lt[selmon->sellt]->arrange == monocle || n == 1) { */
+		if (selmon->lt[selmon->sellt]->arrange == monocle) {
 			gapoffset = 0;
 			gapincr = -2 * borderpx;
 			wc.border_width = 0;

@@ -25,11 +25,11 @@ static const char *fonts[]            = {"Fantasque Sans Mono:size=9:antialias=t
                                          "Hack:size=8:antialias=true:autohint=true",
                                          "JoyPixels:size=10:antialias=true:autohint=true"
 										};
-static const char col_gray1[]         = "#282a36";
-static const char col_gray2[]         = "#282a36"; /* border color unfocused windows */
-static const char col_gray3[]         = "#ffe585";
-static const char col_gray4[]         = "#ffffff";
-static const char col_cyan[]          = "#434758"; /* border color focused windows and tags */
+static const char col_gray1[]         = "#282828";
+static const char col_gray2[]         = "#282828"; /* border color unfocused windows */
+static const char col_gray3[]         = "#fabd2f";
+static const char col_gray4[]         = "#ebdbb2";
+static const char col_cyan[]          = "#928374"; /* border color focused windows and tags */
 
 /* Bar opacity 
  * 0xff is no transparency.

@@ -41,21 +41,22 @@ NOTE: Installing dwm-bruno will overwrite your existing dwm installation if you 
 
 The MODKEY is set to the Super key (also known as the Windows key).
 
-| Keybinding                | Action                                                                   |
-| :---                      | :---                                                                     |
-| `MODKEY + RETURN`         | opens terminal (st is the terminal but can be easily changed)            |
-| `MODKEY + d`              | opens run launcher (dmenu is the run launcher but can be easily changed) |
-| `MODKEY + SHIFT + q`      | closes window with focus                                                 |
-| `MODKEY + SHIFT + r`      | restarts dwm                                                             |
-| `MODKEY + SHIFT + e`      | exit dwm                                                                 |
-| `MODKEY + 1-9`            | switch focus to workspace (1-9)                                          |
-| `MODKEY + SHIFT + 1-9`    | send focused window to workspace (1-9)                                   |
-| `MODKEY + j`              | focus stack +1 (switches focus between windows in the stack)             |
-| `MODKEY + k`              | focus stack -1 (switches focus between windows in the stack)             |
-| `MODKEY + SHIFT + j`      | rotate stack +1 (rotates the windows in the stack)                       |
-| `MODKEY + SHIFT + k`      | rotate stack -1 (rotates the windows in the stack)                       |
-| `MODKEY + h`              | setmfact -0.05 (expands size of window)                                  |
-| `MODKEY + l`              | setmfact +0.05 (shrinks size of window)                                  |
+| Keybinding             | Action                                                                       |
+| :---                   | :---                                                                         |
+| `MODKEY + RETURN`      | opens terminal (st is the terminal but can be easily changed)                |
+| `ALT + RETURN`         | opens tabbed instance with st                                                |
+| `MODKEY + d`           | opens run launcher (dmenu is the run launcher but can be easily changed)     |
+| `MODKEY + SHIFT + q`   | closes window with focus                                                     |
+| `MODKEY + SHIFT + r`   | restarts dwm                                                                 |
+| `MODKEY + SHIFT + e`   | exit dwm                                                                     |
+| `MODKEY + 1-9`         | switch focus to workspace (1-9)                                              |
+| `MODKEY + SHIFT + 1-9` | send focused window to workspace (1-9)                                       |
+| `MODKEY + j`           | focus stack +1 (switches focus between windows in the stack)                 |
+| `MODKEY + k`           | focus stack -1 (switches focus between windows in the stack)                 |
+| `MODKEY + SHIFT + j`   | rotate stack +1 (rotates the windows in the stack)                           |
+| `MODKEY + SHIFT + k`   | rotate stack -1 (rotates the windows in the stack)                           |
+| `MODKEY + h`           | setmfact -0.05 (expands size of window)                                      |
+| `MODKEY + l`           | setmfact +0.05 (shrinks size of window)                                      |
 
 
 # Running dwm
@@ -88,7 +89,6 @@ You will need to create this file and the directory that it is located.  An exam
 	picom &
 	feh --bgscale ~/img/wallpaper.jpg &
 	dwmblocks &
-    redshift
     ```
 	
-The example autostart.sh above launches the picom compositor, sets the wallpaper with feh with an image located at $HOME/img/wallpaper.jpg, launches dwmblocks to add some widgets to our dwm panel and runs redshift to change some of your screen temperature.  Obviously, you would need to install picom, feh and redshift to use those programs in your autostart.  And you would need to install [dwmblocks](https://github.com/brunomontezano/dotfiles/tree/master/dwmblocks) to use it.  To use my dwmblocks, you also need to download the scripts found [here](https://github.com/brunomontezano/dotfiles/tree/master/.local/bin).
+The example autostart.sh above launches the picom compositor, sets the wallpaper with feh with an image located at $HOME/img/wallpaper.jpg and launches dwmblocks to add some widgets to our dwm panel.  Obviously, you would need to install picom and feh to use those programs in your autostart.  And you would need to install [dwmblocks](https://github.com/brunomontezano/dotfiles/tree/master/dwmblocks) to use it.  To use my dwmblocks, you also need to download the scripts found [here](https://github.com/brunomontezano/dotfiles/tree/master/.local/bin).

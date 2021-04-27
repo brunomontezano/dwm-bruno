@@ -102,8 +102,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
 /* An alternative way to launch st along with the fish shell */
 /* static const char *termcmd[]     = { "st", "-e fish", NULL }; */
-static const char *termcmd[]     = { "alacritty", NULL };
-static const char *tabtermcmd[]  = { "tabbed", "-r 2", "alacritty", "-w", "''", NULL };
+static const char *termcmd[]     = { "st", NULL };
+static const char *tabtermcmd[]  = { "tabbed", "-r 2", "st", "-w", "''", NULL };
 static const char *slockcmd[]    = { "slock", NULL };
 
 static Key keys[] = {

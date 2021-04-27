@@ -25,9 +25,13 @@ static const char *fonts[]            = {"Fantasque Sans Mono:size=9:antialias=t
                                          "Hack:size=8:antialias=true:autohint=true",
                                          "JoyPixels:size=10:antialias=true:autohint=true"
 										};
-static const char blacktone[]         = "#282828";
-static const char whitetone[]         = "#ebdbb2"; /* border color unfocused windows */
-static const char yellowtone[]        = "#fabd2f";
+
+static const char fg[]              = "#ffffff";
+static const char nord_fg[]         = "#D8DEE9";
+static const char one_bg[]          = "#1C1B1D";
+static const char nord_bg[]         = "#2E3440";
+static const char one_green[]       = "#98c379";
+static const char nord_blue[]       = "#81A1C1";
 
 /* Bar opacity 
  * 0xff is no transparency.
@@ -38,8 +42,8 @@ static const unsigned int baralpha    = 0xff;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]        = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { whitetone, blacktone, blacktone },
-	[SchemeSel]  = { blacktone, yellowtone,  yellowtone  },
+    [SchemeNorm] = { nord_fg,   nord_bg,   nord_bg   },
+	[SchemeSel]  = { nord_bg,   nord_blue, nord_blue },
 };
 static const unsigned int alphas[][3] = {
 	/*               fg      bg        border     */
@@ -98,8 +102,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
 /* An alternative way to launch st along with the fish shell */
 /* static const char *termcmd[]     = { "st", "-e fish", NULL }; */
-static const char *termcmd[]     = { "st", NULL };
-static const char *tabtermcmd[]  = { "tabbed", "-r 2", "st", "-w", "''", NULL };
+static const char *termcmd[]     = { "alacritty", NULL };
+static const char *tabtermcmd[]  = { "tabbed", "-r 2", "alacritty", "-w", "''", NULL };
 static const char *slockcmd[]    = { "slock", NULL };
 
 static Key keys[] = {

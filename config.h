@@ -27,11 +27,11 @@ static const char *fonts[]            = {"Fantasque Sans Mono:size=9:antialias=t
 										};
 
 static const char fg[]              = "#ffffff";
-static const char nord_fg[]         = "#D8DEE9";
+static const char tn_fg[]           = "#c0caf5";
 static const char one_bg[]          = "#1C1B1D";
-static const char nord_bg[]         = "#2E3440";
-static const char one_green[]       = "#98c379";
-static const char nord_blue[]       = "#81A1C1";
+static const char tn_bg[]           = "#1a1b26";
+static const char one_green[]       = "#9ece6a";
+static const char tn_blue[]         = "#7aa2f7";
 
 /* Bar opacity 
  * 0xff is no transparency.
@@ -42,8 +42,8 @@ static const unsigned int baralpha    = 0xff;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]        = {
 	/*               fg         bg         border   */
-    [SchemeNorm] = { nord_fg,   nord_bg,   nord_bg   },
-	[SchemeSel]  = { nord_bg,   nord_blue, nord_blue },
+    [SchemeNorm] = { tn_fg,   tn_bg,   tn_bg   },
+	[SchemeSel]  = { tn_bg,   tn_blue, tn_blue },
 };
 static const unsigned int alphas[][3] = {
 	/*               fg      bg        border     */
@@ -62,7 +62,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
+	/*{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },*/
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
 	{ "st-256color",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */

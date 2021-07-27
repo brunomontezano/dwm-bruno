@@ -21,7 +21,7 @@ static const int vertpadbar           = 7;        /* vertical padding for status
  * Arch repos and is listed as a dependency for this build. JoyPixels is also
  * a hard dependency and makes colored fonts and emojis possible.
  */
-static const char *fonts[]            = {"Fantasque Sans Mono:size=9:antialias=true:autohint=true",
+static const char *fonts[]            = {"JetBrains Mono:size=9:antialias=true:autohint=true",
                                          "Hack:size=8:antialias=true:autohint=true",
                                          "JoyPixels:size=10:antialias=true:autohint=true"
 										};
@@ -163,6 +163,10 @@ static Key keys[] = {
     { 0,                       XF86XK_AudioLowerVolume, spawn,  SHCMD("pactl set-sink-volume 0 -5%; pkill -RTMIN+10 dwmblocks")},
 	{ 0,                       XF86XK_AudioMute,        spawn,  SHCMD("pactl set-sink-mute 0 toggle; pkill -RTMIN+10 dwmblocks")},
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn,  SHCMD("pactl set-sink-volume 0 +5%; pkill -RTMIN+10 dwmblocks")},
+
+    /* Change brightness */
+    { 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 15") },
+	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 15") },
 };
 
 /* Button definitions */

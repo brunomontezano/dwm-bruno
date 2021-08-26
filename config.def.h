@@ -10,9 +10,9 @@
 static const unsigned int borderpx    = 2;        /* border pixel of windows */
 static const unsigned int snap        = 32;       /* snap pixel */
 static const int swallowfloating      = 0;        /* 1 means swallow floating windows by default */
-static const unsigned int gappx       = 6;        /* pixel gap between clients */
+static const unsigned int gappx       = 2;        /* pixel gap between clients */
 static const int showbar              = 1;        /* 0 means no bar */
-static const int topbar               = 1;        /* 0 means bottom bar */
+static const int topbar               = 0;        /* 1 means top bar */
 static const int horizpadbar          = 6;        /* horizontal padding for statusbar */
 static const int vertpadbar           = 7;        /* vertical padding for statusbar */
 
@@ -32,6 +32,8 @@ static const char one_bg[]          = "#1C1B1D";
 static const char tn_bg[]           = "#1a1b26";
 static const char one_green[]       = "#9ece6a";
 static const char tn_blue[]         = "#7aa2f7";
+static const char tn_yellow[]       = "#e0af68";
+static const char tn_purple[]       = "#bb9af7";
 
 /* Bar opacity 
  * 0xff is no transparency.
@@ -43,7 +45,7 @@ static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]        = {
 	/*               fg         bg         border   */
     [SchemeNorm] = { tn_fg,   tn_bg,   tn_bg   },
-	[SchemeSel]  = { tn_bg,   tn_blue, tn_blue },
+	[SchemeSel]  = { tn_bg,   tn_blue, tn_yellow },
 };
 static const unsigned int alphas[][3] = {
 	/*               fg      bg        border     */

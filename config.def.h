@@ -7,10 +7,10 @@
 /* See LICENSE file for copyright and license details. */
 
 /* Appearance */
-static const unsigned int borderpx    = 2;        /* border pixel of windows */
-static const unsigned int snap        = 32;       /* snap pixel */
+static const unsigned int borderpx    = 1;        /* border pixel of windows */
+static const unsigned int snap        = 16;       /* snap pixel */
 static const int swallowfloating      = 0;        /* 1 means swallow floating windows by default */
-static const unsigned int gappx       = 2;        /* pixel gap between clients */
+static const unsigned int gappx       = 4;        /* pixel gap between clients */
 static const int showbar              = 1;        /* 0 means no bar */
 static const int topbar               = 0;        /* 1 means top bar */
 static const int horizpadbar          = 6;        /* horizontal padding for statusbar */
@@ -26,15 +26,6 @@ static const char *fonts[]            = {"JetBrains Mono:size=9:antialias=true:a
                                          "JoyPixels:size=10:antialias=true:autohint=true"
 										};
 
-static const char fg[]              = "#ffffff";
-static const char tn_fg[]           = "#c0caf5";
-static const char one_bg[]          = "#1C1B1D";
-static const char tn_bg[]           = "#1a1b26";
-static const char one_green[]       = "#9ece6a";
-static const char tn_blue[]         = "#7aa2f7";
-static const char tn_yellow[]       = "#e0af68";
-static const char tn_purple[]       = "#bb9af7";
-
 /* Bar opacity 
  * 0xff is no transparency.
  * 0xee adds wee bit of transparency.
@@ -42,10 +33,20 @@ static const char tn_purple[]       = "#bb9af7";
  */
 static const unsigned int baralpha    = 0xff; 
 static const unsigned int borderalpha = OPAQUE;
-static const char *colors[][3]        = {
-	/*               fg         bg         border   */
-    [SchemeNorm] = { tn_fg,   tn_bg,   tn_bg   },
-	[SchemeSel]  = { tn_bg,   tn_blue, tn_yellow },
+
+static const char fg[]         = "#202631";
+static const char bg[]         = "#839496";
+static const char acc[]        = "#93a1a1";
+
+static const char *colors[][3]      = {
+	/*                   fg  bg   border */
+	[SchemeNorm]     = { fg, bg,  bg  },
+	[SchemeSel]      = { bg, acc, acc },
+	[SchemeStatus]   = { fg, bg,  "#000000"  }, // Statusbar right
+	[SchemeTagsSel]  = { fg, acc, "#000000"  }, // Tagbar left selected
+	[SchemeTagsNorm] = { fg, bg,  "#000000"  }, // Tagbar left unselected
+	[SchemeInfoSel]  = { fg, bg,  "#000000"  }, // infobar middle  selected
+	[SchemeInfoNorm] = { fg, bg,  "#000000"  }, // infobar middle  unselected
 };
 static const unsigned int alphas[][3] = {
 	/*               fg      bg        border     */
@@ -73,7 +74,7 @@ static const Rule rules[] = {
 #include <X11/XF86keysym.h>
 
 /* Layout(s) */
-static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.60; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 

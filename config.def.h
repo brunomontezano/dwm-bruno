@@ -7,7 +7,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* Appearance */
-static const unsigned int borderpx    = 1;        /* border pixel of windows */
+static const unsigned int borderpx    = 2;        /* border pixel of windows */
 static const unsigned int snap        = 16;       /* snap pixel */
 static const int swallowfloating      = 0;        /* 1 means swallow floating windows by default */
 static const unsigned int gappx       = 4;        /* pixel gap between clients */
@@ -31,12 +31,12 @@ static const char *fonts[]            = {"JetBrains Mono:size=9:antialias=true:a
  * 0xee adds wee bit of transparency.
  * Play with the value to get desired transparency.
  */
-static const unsigned int baralpha    = 0xff; 
+static const unsigned int baralpha    = 0xff;
 static const unsigned int borderalpha = OPAQUE;
 
-static const char fg[]         = "#202631";
-static const char bg[]         = "#839496";
-static const char acc[]        = "#93a1a1";
+static const char fg[]         = "#15161e";
+static const char bg[]         = "#a9b1d6";
+static const char acc[]        = "#c0caf5";
 
 static const char *colors[][3]      = {
 	/*                   fg  bg   border */
@@ -66,6 +66,7 @@ static const Rule rules[] = {
 	 */
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
 	/*{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },*/
+	{ "R_x11",    NULL,     NULL,           0,         1,          0,           1,        -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
 	{ "st-256color",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
@@ -74,7 +75,7 @@ static const Rule rules[] = {
 #include <X11/XF86keysym.h>
 
 /* Layout(s) */
-static const float mfact     = 0.60; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 

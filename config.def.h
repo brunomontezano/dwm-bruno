@@ -21,7 +21,7 @@ static const int vertpadbar           = 7;        /* vertical padding for status
  * Arch repos and is listed as a dependency for this build. JoyPixels is also
  * a hard dependency and makes colored fonts and emojis possible.
  */
-static const char *fonts[]            = {"JetBrains Mono:size=9:antialias=true:autohint=true",
+static const char *fonts[]            = {"FiraMono Nerd Font:size=9:antialias=true:autohint=true",
                                          "Hack:size=8:antialias=true:autohint=true",
                                          "JoyPixels:size=10:antialias=true:autohint=true"
 										};
@@ -34,9 +34,9 @@ static const char *fonts[]            = {"JetBrains Mono:size=9:antialias=true:a
 static const unsigned int baralpha    = 0xff;
 static const unsigned int borderalpha = OPAQUE;
 
-static const char fg[]         = "#15161e";
-static const char bg[]         = "#a9b1d6";
-static const char acc[]        = "#c0caf5";
+static const char fg[]         = "#3c3836";
+static const char bg[]         = "#fbf1c7";
+static const char acc[]        = "#d5c4a1";
 
 static const char *colors[][3]      = {
 	/*                   fg  bg   border */
@@ -67,6 +67,7 @@ static const Rule rules[] = {
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
 	/*{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },*/
 	{ "R_x11",    NULL,     NULL,           0,         1,          0,           1,        -1 },
+	{ "gnuplot_qt",    NULL,     NULL,           0,         1,          0,           1,        -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
 	{ "st-256color",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
